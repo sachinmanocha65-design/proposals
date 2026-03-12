@@ -1,0 +1,39 @@
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+.page-sheet {
+    background: white;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+    border: 1px solid #f1f5f9;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.gantt-grid {
+    display: grid;
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+}
+.section-accent {
+    border-left: 4px solid #f59e0b;
+    padding-left: 1.5rem;
+}
+.page-number-tag {
+    position: absolute;
+    top: -2.5rem;
+    left: 0;
+    color: #94a3b8;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+.step-card {
+    transition: all 0.3s ease;
+}
+.step-card:hover {
+    border-color: #f59e0b;
+    transform: translateY(-2px);
+}
